@@ -1,4 +1,6 @@
-# Mathias’s dotfiles
+# Jozef’s dotfiles
+
+Original dotfiles: https://github.com/mathiasbynens/dotfiles
 
 ## Installation
 
