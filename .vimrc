@@ -33,6 +33,10 @@ set modelines=4
 set number
 " Enable syntax highlighting
 syntax on
+" Use the dark Solarized theme (https://github.com/altercation/solarized/tree/master/vim-colors-solarized)
+set background=light
+let g:solarized_termcolors=256
+colorscheme solarized
 " Highlight current line
 set cursorline
 " Make tabs as wide as two spaces
