@@ -37,3 +37,6 @@ complete -o "nospace" -W "Finder Dock Mail Safari iTunes iCal Address\ Book Syst
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+
+# enable z directory changer
+[ -f /usr/local/bin/z.sh ] && . /usr/local/bin/z.sh
