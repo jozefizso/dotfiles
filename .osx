@@ -11,9 +11,8 @@
 # Menu bar: enable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool true
 
-# Menu bar: show remaining battery time; hide percentage
-defaults write com.apple.menuextra.battery ShowPercent -string "NO"
-defaults write com.apple.menuextra.battery ShowTime -string "YES"
+# Menu bar: show battery percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
 # Default Lion behavior. Scroll bars are visible when scrolling with an Apple trackpad and always visible with a mouse.
 defaults write NSGlobalDomain AppleShowScrollBars -string "Automatic"
