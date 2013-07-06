@@ -124,9 +124,6 @@ defaults write com.apple.dock no-glass -bool false
 # Do not hide the Dock
 defaults write com.apple.dock autohide -bool false
 
-# Enable iTunes track notifications in the Dock
-defaults write com.apple.dock itunes-notifications -bool true
-
 # Reset Launchpad
 find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
 
