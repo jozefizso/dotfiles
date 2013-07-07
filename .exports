@@ -1,9 +1,34 @@
+export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
+
+# Setup terminal, and turn on colors
+export TERM=xterm-256color
+export CLICOLOR=1
+export LSCOLORS=Gxfxcxdxbxegedabagacad
+
 # Make vim the default editor
 export EDITOR="subl -w"
+
 # Don’t clear the screen after quitting a manual page
+export PAGER='less'
 export MANPAGER="less -X"
+
+#
+# less
+#
+
+# Set the default Less options.
+# Mouse-wheel scrolling has been disabled by -X (disable screen clearing).
+# Remove -X and -F (exit if the content fits on one screen) to enable it.
+export LESS='-F -g -i -M -R -S -w -X -z-4'
+
 # Highlight section titles in manual pages
 export LESS_TERMCAP_md="$ORANGE"
+
+
+#
+# History
+#
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
@@ -11,3 +36,11 @@ export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+
+#
+# grep
+#
+
+# Enable color in grep
+export GREP_OPTIONS='--color=auto'
+export GREP_COLOR='3;33'
