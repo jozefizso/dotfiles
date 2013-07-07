@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#
+# Host configuration (OS X - jozef-mbp)
+#
+# 2013-07-07, Jozef Izso
+#
+
+###############################################################################
+# Computer Name                                                               #
+###############################################################################
+
+scutil --set ComputerName "Jozef’s MacBook Pro"
+scutil --set HostName "jozef-mbp"
+scutil --set LocalHostName "Jozefs-MacBook-Pro"
