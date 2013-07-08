@@ -24,9 +24,13 @@ brew install --default-names homebrew/dupes/grep
 # Install everything else
 brew install ack
 brew install git
+brew install subversion
 brew install node
 brew install rename
 brew install tree
 
 brew install bash
 brew install zsh
+
+brew install nmap
+brew install mtr
