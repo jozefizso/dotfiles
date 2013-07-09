@@ -25,6 +25,7 @@
 	co = checkout
 	ci = commit
 	st = status -s
+	pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
 
 [apply]
 	# Detect whitespace errors when applying a patch
