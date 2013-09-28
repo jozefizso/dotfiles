@@ -32,5 +32,13 @@ brew install tree
 brew install bash
 brew install zsh
 
+# network utilities
 brew install nmap
 brew install mtr
+
+# Install Web Dev Server
+brew tap jozefizso/homebrew-apache2
+brew tap jozefizso/homebrew-php
+
+brew install jozefizso/apache2/apache24
+brew install php54
