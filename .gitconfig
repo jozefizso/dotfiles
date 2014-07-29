@@ -27,6 +27,7 @@
   ci = commit
   st = status -s
   pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
+  up = !git pull --rebase --prune $@ && git submodule update --init --recursive
 
 [apply]
   # Detect whitespace errors when applying a patch
